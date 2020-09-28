@@ -1,7 +1,7 @@
 <template>
     <div :class="elementSize">
         <field-wrapper :stacked="field.stacked">
-            <div class="px-8" :class="field.stacked ? 'pt-6 w-full' : 'py-6 w-2/5'">
+            <div class="px-8" :class="field.stacked ? 'pt-6 w-full' : hasSize ? 'py-6 w-2/5' : 'py-6 w-1/5'">
                 <slot>
                     <form-label
                             :label-for="field.attribute"
