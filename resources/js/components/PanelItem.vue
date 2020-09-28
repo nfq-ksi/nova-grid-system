@@ -85,8 +85,8 @@
                         ? 'w-full'
                         : 'w-4/5'
                     : this.hasSize
-                        ? 'w-1/2'
-                        : 'w-full'
+                        ? 'w-full'
+                        : 'w-1/2'
             },
 
             /**
