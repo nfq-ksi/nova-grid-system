@@ -1,7 +1,7 @@
 <template>
     <div :class="elementSize">
         <field-wrapper :stacked="field.stacked">
-            <div class="" :class="field.stacked ? 'pt-6 w-full' : 'py-4 w-1/4'">
+            <div class="" :class="field.stacked ? 'pt-6 w-full' : 'py-4 w-1/2'">
                 <slot>
                     <h4 class="font-normal text-80">{{ label }}</h4>
                 </slot>
@@ -85,8 +85,8 @@
                         ? 'w-full'
                         : 'w-4/5'
                     : this.hasSize
-                        ? 'w-full'
-                        : 'w-3/4'
+                        ? 'w-1/2'
+                        : 'w-full'
             },
 
             /**
